@@ -1,10 +1,14 @@
 # TMDB Project README (My To do list)
 
 Created by: Abdullah Khan 
+
 Editor: Refined by Gpt-4 
+
 Date Created: 2021-06-15
+
 Last Edited: 2021-06-15 at 2:11 p.m
-Version: 1.0.0
+
+Version: 1.0
 
 
 This README outlines the tasks, small changes, and future plans for the TMDB Project, a web application designed to interact with The Movie Database (TMDB) API. This project aims to provide users with a comprehensive and user-friendly interface for discovering movies and TV shows, reading reviews, and accessing detailed information about their favorite media.
