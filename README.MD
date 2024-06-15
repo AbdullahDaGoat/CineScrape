@@ -1,4 +1,7 @@
-# TMDB Project README
+# TMDB Project README (My To do list)
+
+Created by: Abdullah Khan 
+Editor: Refined by Gpt-4 
 
 This README outlines the tasks, small changes, and future plans for the TMDB Project, a web application designed to interact with The Movie Database (TMDB) API. This project aims to provide users with a comprehensive and user-friendly interface for discovering movies and TV shows, reading reviews, and accessing detailed information about their favorite media.
 
@@ -39,6 +42,14 @@ This README outlines the tasks, small changes, and future plans for the TMDB Pro
    - [Adding Ratings](#adding-ratings)
 
 ## Small Changes
+
+
+### Meta Tags
+
+Add meta tags to improve SEO and social media sharing.
+Add Sitemap.xml
+Add SEO backlinks and keywords
+Robots can index and follow
 
 ### Fetch Translations
 
