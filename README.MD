@@ -52,6 +52,7 @@ This README outlines the tasks, small changes, and future plans for the TMDB Pro
 ## Small Changes
 
 
+
 ### Fetch Reviews
 
 ```javascript
@@ -69,9 +70,6 @@ fetch('https://api.themoviedb.org/3/movie/movie_id/reviews?language=en-US&page=1
   .catch(err => console.error(err));
 ```
 
-### Discover Button
-
-Create a "Discover" button using the Discover Movie API endpoint. Refer to the [Discover Movie](https://developer.themoviedb.org/reference/discover-movie) documentation for details.
 
 ### Back to Top Button
 
@@ -242,3 +240,8 @@ fetch('https://api.themoviedb.org/3/movie/movie_id/rating', options)
 ## Filter by Certification
 
 filtering by certification (e.g., G, PG, R), you can add a new filter option in the Advanced Filter modal and modify the loadMedia function to include the appropriate query parameter based on the selected certification filter.
+
+## Discover + Algoritm
+
+
+Once everything else is created create a discover tab where ussrs can get movie recomendations based on movies they watched liked etc
