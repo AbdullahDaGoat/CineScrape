@@ -6,9 +6,9 @@ Editor: Refined by Gpt-4
 
 Date Created: 2021-06-15
 
-Last Edited: 2021-06-15 at 2:11 p.m
+Last Edited: 2021-06-15 at 4:20 p.m
 
-Version: 1.0
+Version: 1.1
 
 
 This README outlines the tasks, small changes, and future plans for the TMDB Project, a web application designed to interact with The Movie Database (TMDB) API. This project aims to provide users with a comprehensive and user-friendly interface for discovering movies and TV shows, reading reviews, and accessing detailed information about their favorite media.
@@ -51,30 +51,6 @@ This README outlines the tasks, small changes, and future plans for the TMDB Pro
 
 ## Small Changes
 
-
-### Meta Tags
-
-Add meta tags to improve SEO and social media sharing.
-Add Sitemap.xml
-Add SEO backlinks and keywords
-Robots can index and follow
-
-### Fetch Translations
-
-```javascript
-const options = {
-  method: 'GET',
-  headers: {
-    accept: 'application/json',
-    Authorization: 'Bearer YOUR_API_KEY'
-  }
-};
-
-fetch('https://api.themoviedb.org/3/movie/movie_id/translations', options)
-  .then(response => response.json())
-  .then(response => console.log(response))
-  .catch(err => console.error(err));
-```
 
 ### Fetch Reviews
 
@@ -120,52 +96,6 @@ fetch('https://api.themoviedb.org/3/authentication', options)
   .catch(err => console.error(err));
 ```
 
-## Finding Data on TMDB
-
-There are three main ways to search for and find movies, TV shows, and people on TMDB:
-
-1. **Search (/search)**: Provide a query string to find the closest match.
-2. **Discover (/discover)**: Use filters or definable values like ratings, certifications, or release dates.
-3. **Find (/find)**: Use existing external IDs (e.g., IMDB ID) to find data.
-
-Refer to the [Search & Query for Details](https://developer.themoviedb.org/reference/search) page for more workflows.
-
-## Making Languages Work
-
-Learn about languages on TMDB, including the use of ISO 639-1 and ISO 3166-1 codes. Example requests:
-### English Example
-
-```javascript
-const options = {
-  method: 'GET',
-  headers: {
-    accept: 'application/json',
-    Authorization: 'Bearer YOUR_API_KEY'
-  }
-};
-
-fetch('https://api.themoviedb.org/3/tv/1399?language=en-US', options)
-  .then(response => response.json())
-  .then(response => console.log(response))
-  .catch(err => console.error(err));
-```
-
-### Portuguese Example
-
-```javascript
-const options = {
-  method: 'GET',
-  headers: {
-    accept: 'application/json',
-    Authorization: 'Bearer YOUR_API_KEY'
-  }
-};
-
-fetch('https://api.themoviedb.org/3/movie/popular?language=pt-BR', options)
-  .then(response => response.json())
-  .then(response => console.log(response))
-  .catch(err => console.error(err));
-```
 
 ## User Interface Improvements
 
@@ -308,3 +238,7 @@ fetch('https://api.themoviedb.org/3/movie/movie_id/rating', options)
   .then(response => console.log(response))
   .catch(err => console.error(err));
 ```
+
+## Filter by Certification
+
+filtering by certification (e.g., G, PG, R), you can add a new filter option in the Advanced Filter modal and modify the loadMedia function to include the appropriate query parameter based on the selected certification filter.

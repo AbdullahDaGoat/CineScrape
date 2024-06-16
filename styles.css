@@ -324,3 +324,14 @@ background-color: #718096; /* Dark mode scrollbar thumb hover color */
 body.dark::-webkit-scrollbar-corner {
 background-color: #2d3748; /* Dark mode scrollbar corner color */
 }
+
+select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #e2e8f0; /* Replace with your desired background color */
+}
+
+/* Styles for disabled options */
+option:disabled {
+  color: #a0aec0; /* Replace with your desired text color */
+}
